@@ -47,6 +47,9 @@ function showWeather(response) {
   document
     .querySelector("#weather-icon")
     .setAttribute("alt", response.data.condition.icon);
+  document.querySelector("#celsius-unit").setAttribute("style", "");
+  document.querySelector("#fahrenheit-unit").style.cssText =
+    "color:#008ae0; font-size:14px; font-weight :600;  cursor:pointer";
   formatDate(response.data.time * 1000);
 }
 
