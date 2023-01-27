@@ -10,12 +10,61 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <title>Weather App</title>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <video id="background-video" autoplay loop muted>
+      <source src=media/mist.mp4 type="video/mp4">
+    </video>
+    <div class="container">
+      <form class="input-group flex-nowrap search-box">
+        <input
+          type="search"
+          class="form-control city-input"
+          placeholder="Try another city"
+        />
+
+        <input
+          type="submit"
+          value="Search"
+          class="input-group-text submit-button"
+        />
+      </form>
+      <div class="main-container">
+        <section class="time-location mini-container">
+          <h1 class="city-name">Tehran,Iran</h1>
+          <ul>
+            <li>
+              <span class="day">Friday</span> <span> </span>
+              <span class="date">1/27/2023</span>
+            </li>
+            <li>13:59</li>
+          </ul>
+        </section>
+        <section class="mini-container description-container">
+          <div class="weather-description">
+            <div class="temperature">
+              <span class="temp-numb">4</span> <a href="#"> °C</a>|<a href="#"
+                >°F</a
+              >
+            </div>
+            <ul class="weather-details">
+              <li><span>8</span>° / <span>1</span>° C</li>
+              <li>humidity : <span>50</span> %</li>
+              <li>wind : <span>10</span> Km/h</li>
+            </ul>
+          </div>
+
+          <i class="bi bi-cloud-drizzle bi-today weather-icon"></i>
+        </section>
+      </div>
+    </div>
     <script href="src/script.js"></script>
   </body>
 </html>
