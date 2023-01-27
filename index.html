@@ -23,11 +23,12 @@
       <source src=media/mist.mp4 type="video/mp4">
     </video>
     <div class="container">
-      <form class="input-group flex-nowrap search-box">
+      <form class="input-group flex-nowrap search-box" id="try-cities">
         <input
           type="search"
           class="form-control city-input"
           placeholder="Try another city"
+          id="city-input"
         />
 
         <input
@@ -41,10 +42,10 @@
           <h1 class="city-name">Tehran,Iran</h1>
           <ul>
             <li>
-              <span class="day">Friday</span> <span> </span>
-              <span class="date">1/27/2023</span>
+              <span id="day">Friday</span> <span> </span>
+              <span id="date">1/27/2023</span>
             </li>
-            <li>13:59</li>
+            <li id="time">13:59</li>
           </ul>
         </section>
         <section class="mini-container description-container">
@@ -56,8 +57,8 @@
             </div>
             <ul class="weather-details">
               <li><span>8</span>° / <span>1</span>° C</li>
-              <li>humidity : <span>50</span> %</li>
-              <li>wind : <span>10</span> Km/h</li>
+              <li id="humidity">humidity : <span>50</span> %</li>
+              <li id="wind">wind : <span>10</span> Km/h</li>
             </ul>
           </div>
 
